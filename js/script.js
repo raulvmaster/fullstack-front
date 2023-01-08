@@ -33,4 +33,12 @@ $(function(){
       event.preventDefault();
     }
   });
+
+  $("#tamano").on('change', function() {
+    console.log(this.value);
+    $.post('http://127.0.0.1:5000/checksize',{size:this.value},function(data){
+      $('#resultado_tamano').html(data);
+    } )
+    // Aqui va la llamada AJAX con JQuery
+   });
 });
