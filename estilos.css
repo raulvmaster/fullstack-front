@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+#foto{
+	display: inline;
+	float: left;
+	margin-top: 1px;  
+	}
+
+#nombre_pizza{
+	display: inline;
+	padding-left: 650px;
+	
+
+}
+#nombre_cliente{
+	background-color: #55ccff;
+padding-top: 50px;
+
+padding-left: 700px;
+}
+#titulo_datos_pedido{
+	padding-left: 500px;
+	padding-top: 2px;
+}
+#datos_pedido{
+	background-color: #40ccbb;
+}
+#nombre{
+	display: inline;
+
+}
