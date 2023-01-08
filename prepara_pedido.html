@@ -1,101 +1,99 @@
-
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="utf-8">
 
-<meta name="description" content="Pizzeria"/>
-<meta name="keywords" content="pizza"/>
-<title> Pizza Full Stack </title>
-<link rel="stylesheet" type="text/css" href="estilos.css">
-<script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="description" content="Pizzeria" />
+	<meta name="keywords" content="pizza" />
+	<title> Pizza Full Stack </title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
+
 <body>
 
-<!--  imagen -->
+	<!--  imagen -->
 
-			<img id="foto" alt="" src="pizza.jpg" width="450"
-	height="342" >
-
-
-<!-- nombre negocio -->
-<form id="datos_pedido" method="post" action="http://localhost:5000/pizza" onsubmit="">
-<!-- <form method="post" id="nombre_cliente"> -->
-	<h1 style="font-family:verdana;">Pizzeria Full Stack</h1>
-
-<!-- registro cliente -->
-
-	<h2 style="font-family:verdana;">Datos del cliente</h2>
-
-	<div>
-  <label for="nombre" style="font-family:verdana;" >Nombre:</label>
-  <input type="text" id="nombre" name="nombre" value=""><br>
-
-  <label for="apellido" style="font-family:verdana;">Apellido:</label>
-  <input type="text" id="apellido" name="apellido" value=""><br>
-
-  <label for="telefono" style="font-family:verdana;">Telefono:</label>
-  <input type="tel" id="telefono" name="telefono" value=""><br>
-
-  <label for="correo" style="font-family:verdana;">Correo:</label>
-  <input type="text" id="correo" name="correo" value=""><br>
-
-  <label for="direccion" style="font-family:verdana;">Direccion:</label>
-  <input type="email" id="direccion" name="direccion" value="">
-
-  </div><br><br><br>
-
- <!-- </form> -->
+	<img id="foto" alt="" src="pizza.jpg" width="450" height="342">
 
 
-<!-- datos pedido -->
+	<!-- nombre negocio -->
+	<form id="datos_pedido" method="post" action="http://localhost:5000/pizza" onsubmit="">
+		<!-- <form method="post" id="nombre_cliente"> -->
+		<h1 style="font-family:verdana;">Pizzeria Full Stack</h1>
+
+		<!-- registro cliente -->
+
+		<h2 style="font-family:verdana;">Datos del cliente</h2>
+
+		<div>
+			<label for="nombre" style="font-family:verdana;">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" value=""><br>
+
+			<label for="apellido" style="font-family:verdana;">Apellido:</label>
+			<input type="text" id="apellido" name="apellido" value=""><br>
+
+			<label for="telefono" style="font-family:verdana;">Telefono:</label>
+			<input type="tel" id="telefono" name="telefono" value=""><br>
+
+			<label for="correo" style="font-family:verdana;">Correo:</label>
+			<input type="text" id="correo" name="correo" value=""><br>
+
+			<label for="direccion" style="font-family:verdana;">Direccion:</label>
+			<input type="email" id="direccion" name="direccion" value="">
+
+		</div><br><br><br>
+
+		<!-- </form> -->
+
+
+		<!-- datos pedido -->
 
 
 
-<!--  tamaño pizza -->
-<form id="datos_pedido" method="post" action="solicita_pedido.html" onsubmit="">
-	<h2 id="titulo_datos_pedido" style="font-family:verdana;">Datos del pedido</h2>
-	<div id="tamano_pizza">
-	<h4 style="font-family:verdana;">Tamaño Pizza</h4>
+		<!--  tamaño pizza -->
+		<!-- <form id="datos_pedido" method="post" action="solicita_pedido.html" onsubmit=""> -->
+			<h2 id="titulo_datos_pedido" style="font-family:verdana;">Datos del pedido</h2>
+			<div id="tamano_pizza">
+				<h4 style="font-family:verdana;">Tamaño Pizza</h4>
 
-	<input type="radio" id="pequeña;" name="pequeña;" value="pequeña;">
-	 <label for="pequeña;" style="font-family:verdana;">Pequeña</label><br>
+				<input type="radio" id="pequeña;" name="pequeña;" value="pequeña;">
+				<label for="pequeña;" style="font-family:verdana;">Pequeña</label><br>
 
-	<input type="radio" id="mediana" name="mediana" value="mediana">
-	 <label for="mediana" style="font-family:verdana;">Mediana</label><br>
+				<input type="radio" id="mediana" name="mediana" value="mediana">
+				<label for="mediana" style="font-family:verdana;">Mediana</label><br>
 
-	<input type="radio" id="grande" name="grande" value="grande">
-	 <label for="grande" style="font-family:verdana;">Grande</label><br><br>
-	</div>
-	<input type="radio" id="XXL" name="XXL" value="XXL">
-	 <label for="XXL" style="font-family:verdana;">XXL</label><br><br>
-	</div>
+				<input type="radio" id="grande" name="grande" value="grande">
+				<label for="grande" style="font-family:verdana;">Grande</label><br><br>
+				
+				<input type="radio" id="XXL" name="XXL" value="XXL">
+				<label for="XXL" style="font-family:verdana;">XXL</label><br><br>
+			</div>
 
+			<!--  seleccion ingredientes -->
 
-	<!--  seleccion ingredientes -->
+			<div>
+				<h4 style="font-family:verdana;">Ingredientes:</h4>
 
+				<input type="radio" id="Jamón_York" name="Jamón_York" value="Jamón_York">
+				<label for="Jamón_York" style="font-family:verdana;">Jamon York</label><br>
 
-	<div>
-	 <h4 style="font-family:verdana;">Ingredientes:</h4>
+				<input type="radio" id="Champiñones" name="Champiñones" value="Champiñones">
+				<label for="Champiñones" style="font-family:verdana;">Champiñones</label><br>
 
-	 <input type="radio" id="Jamón_York" name="Jamón_York" value="Jamón_York">
-	 <label for="Jamón_York" style="font-family:verdana;">Jamon York</label><br>
+				<input type="radio" id="peperoni" name="Peperoni" value="Peperoni">
+				<label for="peperoni" style="font-family:verdana;">Pepperoni</label><br>
 
-	 <input type="radio" id="Champiñones" name="Champiñones" value="Champiñones">
-	 <label for="Champiñones" style="font-family:verdana;">Champiñones</label><br>
+				<input type="radio" id="Aceitunas" name="Aceitunas" value="Aceitunas">
+				<label for="Aceitunas" style="font-family:verdana;">Aceitunas</label><br><br>
+			</div>
 
-	 <input type="radio" id="peperoni" name="Peperoni" value="Peperoni">
-	 <label for="peperoni" style="font-family:verdana;">Pepperoni</label><br>
+			<!-- boton envio datos pedido -->
 
-	 <input type="radio" id="Aceitunas" name="Aceitunas" value="Aceitunas">
-	 <label for="Aceitunas" style="font-family:verdana;">Aceitunas</label><br><br>
-	</div>
-
-	<!-- boton envio datos pedido -->
-
-     <input type="submit" value="Hacer Pedido">
-</form>
+			<input type="submit" value="Hacer Pedido">
+		</form>
 </body>
 
 </html>
